@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch-a-Sketch</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.png">
+</head>
+
+<body>
+<!-- Header -->
+<header>
+  <div class="header-container">
+    <!-- Site Title -->
+    <h1 class="header">Etch-a-Sketch</h1>
+  </div>
+</header>
+
+<!-- Canvas and Settings -->
+<main class="main">
+  <!-- Drawing Settings -->
+  <div class="settings">
+    <!-- Color Picker -->
+    <label>
+      <input type="color" id="colorInput" value="#1e293b">
+    </label>
+
+    <!-- Drawing Options -->
+    <ul class="options">
+
+      <li class="option active" id="pen">Pen</li>
+      <li class="option" id="rainbow">Rainbow</li>
+      <li class="option" id="lighten">Lighten</li>
+      <li class="option" id="darken">Darken</li>
+      <li class="option" id="eraser">Eraser</li>
+      <li class="option" id="clear">Clear</li>
+      <li class="option">
+        <div class="slider-container">
+          <input type="range" id="pixelSlider" class="custom-slider" min="8" max="80" value="16"
+                 aria-label="Pixel Size">
+          <div id="gridSize">Grid Size: 16x16</div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- Canvas Area -->
+  <div id="canvas">
+    <!-- The actual canvas elements for drawing will be added here by JavaScript -->
+  </div>
+</main>
+
+<!-- Footer -->
+<footer>
+
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
